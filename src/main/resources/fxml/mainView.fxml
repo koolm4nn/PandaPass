@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.pandaPass.controllers.MainController"
+           prefHeight="800.0" prefWidth="1200.0">
+
+    <!-- Main Content -->
+    <BorderPane>
+        <center>
+            <StackPane fx:id="content" BorderPane.alignment="CENTER"/>
+        </center>
+
+        <bottom>
+            <!-- Footer -->
+            <HBox prefHeight="35"
+                  spacing="10"
+                  alignment="CENTER"
+                  styleClass="footer, padding-5"
+            >
+
+                <Button fx:id="themeButton"
+                        onAction="#handleSwitchTheme"
+                        styleClass="button-secondary"
+                >
+                </Button>
+
+                <Region HBox.hgrow="ALWAYS"/>
+
+                <Button fx:id="aboutButton"
+                        onAction="#handleAbout"
+                        styleClass="button-secondary">
+                </Button>
+            </HBox>
+        </bottom>
+    </BorderPane>
+
+    <!-- Global overlay container -->
+    <StackPane fx:id="overlayContainer"
+               visible="false"
+               managed="false"
+               pickOnBounds="false"
+               alignment="CENTER"/>
+
+    <!-- Loading Overlay -->
+    <VBox fx:id="loadingOverlay" visible="false" managed="false" alignment="CENTER">
+        <ProgressIndicator/>
+    </VBox>
+</StackPane>

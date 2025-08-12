@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.scene.image.ImageView?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="root-pane" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pandaPass.controllers.SignUpController">
+    <VBox alignment="CENTER" spacing="15.0" stylesheets="@../styles/application.css" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="250.0">
+        <Label styleClass="h1" text="Sign Up" />
+
+        <TextField fx:id="mailInput" promptText="E-Mail" styleClass="width-medium, border-none, font-size-large, login-input" />
+
+        <PasswordField fx:id="passwordInput" promptText="Password" styleClass="width-medium, border-none, font-size-large, login-input" />
+
+        <Text fx:id="errorMessage" managed="false" text="Invalid Credentials" visible="false" />
+
+        <Button fx:id="signUpButton" onAction="#handleSignUp" styleClass="button-primary, button-large, font-size-large" text="Sign Up" />
+        <Button fx:id="toLoginButton" onAction="#handleBackToLogin" styleClass="button-secondary, button-medium, font-size-medium" text="Back to Login" />
+    </VBox>
+</AnchorPane>

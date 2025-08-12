@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.pandaPass.controllers.SettingsController"
+            prefHeight="400.0" prefWidth="600.0">
+    <VBox>
+        <HBox>
+            <Button fx:id="exitSettingsButton" onAction="#handleExitSettingsButton" text="Back"/>
+        </HBox>
+        <TabPane>
+            <tabs>
+                <Tab text="Security" closable="false">
+                    <AnchorPane>
+                        <!--
+                         Master Password Change
+                         Email change
+                         Session timeout duration
+                         2FA
+                         Clear clipboard after X seconds
+                         -->
+                    </AnchorPane>
+                </Tab>
+                <Tab text="Password Generator" closable="false">
+                    <AnchorPane>
+                        <!--
+                         Defaul length
+                         Include Exclude: Uppercase, lowercase, numbers, symbols
+                         Avoidance of ambigous chars like O, 0, 1, l
+                         Custom character set
+                         Password strength indicator
+                         -->
+                    </AnchorPane>
+                </Tab>
+                <Tab text="Appearance" closable="false">
+                    <AnchorPane>
+                        <!--
+                         Theme, Dark mode
+                         Language
+                         -->
+                    </AnchorPane>
+                </Tab>
+                <Tab text="Data Management" closable="false">
+                    <AnchorPane>
+                        <!--
+                         Export vault
+                         import vault
+                         Backup / Restore vault
+                         Clear vault (with confirmation)
+                         -->
+                    </AnchorPane>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </VBox>
+</AnchorPane>

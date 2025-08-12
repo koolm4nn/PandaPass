@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<HBox fx:id="rootContainer"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.pandaPass.controllers.EntryCellController"
+      spacing="10.0" alignment="CENTER_LEFT" styleClass="password-entry">
+
+    <Label fx:id="serviceLabel" text="Service name" styleClass="serviceLabel" />
+    <Label fx:id="categoryLabel" text="" styleClass="categoryLabel" />
+
+    <Region HBox.hgrow="ALWAYS"/>
+
+    <HBox fx:id="cellButtonsContainer" alignment="CENTER_LEFT" spacing="10.0" styleClass="cellButtonsContainer" visible="false" managed="false">
+        <Button fx:id="copyButton" text="" onAction="#handleCopy" styleClass="entryCellButton"/>
+        <Button fx:id="deleteButton" text="Delete" onAction="#handleDelete" styleClass="delete-button"/>
+        <HBox alignment="CENTER" spacing="5.0">
+            <Slider
+                    fx:id="deleteSlider"
+                    min="0" max="100" value="0"
+                    showTickMarks="false" showTickLabels="false"
+                    majorTickUnit="50"
+                    blockIncrement="10"
+                    prefWidth="120"
+                    visible="false">
+                <tooltip>
+                    <Tooltip text="Slide to the right to confirm delete"/>
+                </tooltip>
+            </Slider>
+            <ImageView fx:id="trashIcon"
+                       fitHeight="20" fitWidth="20"
+                       visible="false"/>
+        </HBox>
+    </HBox>
+</HBox>

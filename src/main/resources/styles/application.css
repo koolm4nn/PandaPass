@@ -1,0 +1,149 @@
+/* -fx-font-family: "Roboto"; */
+.root {
+    /* Primary bg color */
+    primary-bg-dark: #040411;
+    primary-bg-light: blanchedalmond;
+
+    primary-green: green;
+    primary-red: red;
+
+    secondary-red: rgba(255, 0, 0, 0.25);
+
+    /* Main Text colors */
+    primary-text-color-dark: #eae9fc;
+    primary-text-color-light: #040316;
+
+}
+
+.root-pane {
+}
+
+.h1 {
+    -fx-font-size: 90px;
+}
+
+.h2 {
+    -fx-font-size: 70px;
+}
+
+.h3 {
+    -fx-font-size: 45px;
+}
+
+.button-large {
+    -fx-min-width: 100px;
+    -fx-pref-width: 120px;
+    -fx-max-width: 140px;
+}
+
+-button-medium {
+    -fx-min-width: 75px;
+    -fx-pref-width: 90px;
+    -fx-max-width: 105px;
+}
+
+.button-primary {
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-border-color: transparent;
+    -fx-background-color: #0d00ff;
+    -fx-text-fill: #eae9fc;
+}
+.button-primary:hover {
+    -fx-background-color: #382dfe;
+}
+
+.button-secondary {
+    /*-fx-pref-width: 100px;
+    -fx-min-width: 100px;
+    -fx-max-width: 100px;
+    -fx-font-size: 16px;*/
+    -fx-background-color: #e2fc6d;
+}
+
+.button-secondary:hover {
+    -fx-background-color: #dafe3b;
+}
+
+.button-accent {
+    -fx-background-color: #e2fc6d;
+}
+
+.padding-5 {
+    -fx-padding: 5;
+}
+
+.margin-5 {
+    -fx-margin: 5;
+}
+
+.width-medium {
+    -fx-pref-width: 300.0;
+    -fx-min-width: 300.0;
+    -fx-max-width: 300.0;
+}
+
+.vault-input {
+    -fx-font-size: 16px;
+    -fx-pref-width: 600px;
+    -fx-min-width: 600px;
+    -fx-max-width: 600px;
+}
+
+.vault-menu-item {
+    -fx-font-size: 11px;
+    -fx-pref-height: 32px;
+    -fx-min-height: 32px;
+    -fx-max-height: 32px;
+    -fx-background-color: red;
+}
+
+.entry-list {
+    /*-fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-control-inner-background-alt: transparent;*/
+}
+
+.password-entry {
+
+}
+
+.password-entry:compromised {
+    -fx-background-color: secondary-red;
+}
+
+.delete-button {
+    -fx-background-color: primary-red;
+}
+
+.delete-button:awaiting-deletion {
+    -fx-background-color: primary-green;
+}
+
+.overlay {
+    -fx-background-color: rgba(0, 0, 0, 0.9);
+}
+
+.border-none {
+    -fx-border-width: 0px;
+}
+
+.error-message {
+    -fx-text-fill: #ef1212;
+}
+
+.font-bold {
+    -fx-font-weight: bold;
+}
+
+.font-size-small {
+    -fx-font-size: 13px;
+}
+
+.font-size-medium {
+    -fx-font-size: 16px;
+}
+
+.font-size-large {
+    -fx-font-size: 18px;
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.pandaPass.controllers.LoginController"
+           prefHeight="800.0" prefWidth="1200.0"
+           fx:id="rootPane"
+           styleClass="root-pane"
+            >
+
+    <AnchorPane fx:id="dummyFocusPane" />
+
+    <AnchorPane fx:id="mainContent">
+        <!-- VBox: keeps elements vertically aligned. -->
+        <VBox alignment="CENTER" spacing="15.0"
+              AnchorPane.topAnchor="250.0"
+              AnchorPane.leftAnchor="350.0"
+              AnchorPane.rightAnchor="50.0">
+            <Label text="PandaPass" styleClass="h1"/>
+
+            <!-- Email field -->
+            <TextField fx:id="emailInput" promptText="Email" styleClass="width-medium, border-none, font-size-large, login-input"/>
+
+            <!-- Password field -->
+            <PasswordField fx:id="passwordInput" promptText="Password" styleClass="width-medium, border-none, font-size-large, login-input"/>
+
+            <!-- Error message field -->
+            <Label fx:id="authenticationErrorMessage" text="Invalid Credentials." visible="false" managed="false" styleClass="error-message, font-bold, font-size-small"/>
+
+            <!-- Login Button -->
+            <Button fx:id="loginButton" text="Login" onAction="#handleLogin" styleClass="button-primary, button-large, font-size-large"/>
+
+            <!-- Sign Up Button -->
+            <Button fx:id="signUpButton" text="Sign Up" onAction="#handleToSignUp" styleClass="button-secondary, button-medium, font-size-medium"/>
+        </VBox>
+    </AnchorPane>
+    <VBox fx:id="loadingOverlay" visible="false" alignment="CENTER" styleClass="loading-overlay">
+        <ProgressIndicator />
+    </VBox>
+</StackPane>

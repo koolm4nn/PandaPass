@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.pandaPass.controllers.VaultController"
+           prefHeight="400.0" prefWidth="600.0"
+           styleClass="root-pane">
+
+    <top>
+        <HBox spacing="15.0"
+              alignment="CENTER"
+              style="-fx-background-color: hotpink;"
+              styleClass="padding-5">
+              <!-- style="-fx-background-color: hotpink;"-->
+            <Button text="Exit"
+                    fx:id="exitVaultButton"
+                    onAction="#handleLogout"
+                    styleClass="secondary-button"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button fx:id="addEntryButton"
+                    text="Add Entry"
+                    styleClass="vault-menu-item"/>
+            <HBox spacing="2.0">
+                <TextField fx:id="searchInput"
+                           promptText="Search for ..."
+                           prefWidth="250.0"
+                           styleClass="vault-menu-item"/>
+                <Button fx:id="clearSearchButton"
+                        text="✖"
+                        onAction="#handleClearSearch"
+                        disable="true"
+                        styleClass="vault-menu-item, padding-5"/>
+            </HBox>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button fx:id="settingsButton" contentDisplay="GRAPHIC_ONLY" styleClass="vault-menu-item"/>
+        </HBox>
+    </top>
+
+    <center>
+        <HBox spacing="10.0"
+              alignment="CENTER_LEFT"
+              VBox.vgrow="ALWAYS"
+              style="-fx-background-color: blue;">
+        <!-- style="-fx-background-color: lawngreen;"-->
+            <ListView fx:id="entriesListView"
+                      styleClass="entry-list"
+                      minWidth="400.0"
+                      prefWidth="600.0"
+                      maxWidth="600.0"
+                      HBox.hgrow="ALWAYS"
+                      VBox.vgrow="ALWAYS"/>
+        </HBox>
+    </center>
+
+    <left>
+        <VBox fx:id="categoryToggleContainer"
+              spacing="10.0"
+              minWidth="100.0"
+              prefWidth="150.0"
+              style="-fx-background-color: lawngreen;">
+            <!-- style="-fx-background-color: lawngreen;" -->
+            <Button fx:id="resetCategorySelectionButton"
+                    text="Reset"
+                    onAction="#handleResetCategorySelection"
+                    styleClass="secondary-button" />
+        </VBox>
+    </left>
+
+    <right>
+        <StackPane fx:id="entryPane" BorderPane.alignment="CENTER_RIGHT"/>
+    </right>
+
+    <StackPane fx:id="overLayContainer"
+               visible="false"
+               managed="false"/>
+</BorderPane>

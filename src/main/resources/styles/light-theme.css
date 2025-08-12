@@ -1,0 +1,208 @@
+.root-pane {
+    -fx-background-color: primary-bg-light;
+}
+.footer {
+    -fx-background-color: primary-bg-light;
+}
+
+.h1 {
+    -fx-text-fill: primary-text-color-light;
+}
+
+.h2 {
+    -fx-text-fill: primary-text-color-dark;
+}
+
+.login-input {
+    -fx-border-color: #E0E0E0;
+    -fx-background-color: #040411;
+    -fx-text-fill: #eae9fc;
+    -fx-prompt-text-fill: #888888;
+}
+
+.login-input:focused {
+/*
+    -fx-focus-color: #000000;
+    -fx-faint-focus-color: transparent;*/
+}
+.login-input:hover {
+/*
+    -fx-border-color: #000000;*/
+}
+.progress-indicator {
+/*
+    -fx-progress-color: #ffffff;*/
+}
+.loading-overlay {
+/*
+    -fx-background-color: #000000BF;*/
+}
+.primary-button {
+/*
+    -fx-pref-width: 120px;
+    -fx-min-width: 120px;
+    -fx-max-width: 120px;
+    -fx-background-color: #444444;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 18px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+    -fx-content-display: "RIGHT";*/
+}
+
+.secondary-button {
+    /* -fx-pref-width: 100px;
+    -fx-min-width: 100px;
+    -fx-max-width: 100px;
+    -fx-font-size: 16px;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #444444;*/
+}
+
+.authentication-error-message {
+/*
+    -fx-text-fill: red;
+    -fx-font-size: 14px;*/
+}
+
+.entry-list {
+/*
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-control-inner-background-alt: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-border-color: transparent;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-pref-width: 800px;
+    -fx-min-width: 800px;
+    -fx-max-width: 800px;*/
+}
+
+.entry-list:focused {
+/*
+    -fx-background-insets: 0;
+    -fx-background-color: transparent;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;*/
+}
+
+.entry-cell {
+/*
+    -fx-padding: 5;
+    -fx-background-color: #3B2F2F;
+    -fx-border-color: transparent;
+    -fx-text-fill: #f0f0f0;
+    -fx-pref-height: 42px;
+    -fx-min-height: 42px;
+    -fx-max-height: 42px;
+    -fx-border-radius: 1px;
+      -fx-background-radius: 4;
+      -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent; */
+}
+
+/*.entry-cell:selected .entry-cell:focused {
+    -fx-background-color: "red";
+    -fx-text-fill: #ffffff;
+    -fx-border-color: transparent;
+}*/
+
+/*.list-cell:filled:selected {
+    -fx-background-color: "green";
+    -fx-text-fill: white;
+}*/
+
+.list-cell:filled:selected .entry-cell {
+/*
+    -fx-background-color: green;
+    -fx-text-fill: black;*/
+}
+
+/* Increase label size when selected */
+.list-cell:filled:selected .entry-cell Label {
+/*
+    -fx-font-size: 15px;
+    -fx-text-fill: yellow;*/
+}
+
+.list-cell:focused {
+/*
+    -fx-background-color: transparent;
+    -fx-border-radius: 1px;
+    -fx-border-color: transparent;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;*/
+}
+
+.entry-cell Label{
+/*
+    -fx-font-size: 14px;
+    -fx-text-fill: #f0f0f0;*/
+}
+
+
+.entryCellButton {
+/*
+    -fx-pref-width: 80px;
+    -fx-min-width: 80px;
+    -fx-max-width: 80px;
+    -fx-pref-height: 30px;
+    -fx-min-height: 30px;
+    -fx-max-height: 30px;*/
+}
+
+.delete-button {
+/*
+    -fx-pref-width: 80px;
+    -fx-min-width: 80px;
+    -fx-max-width: 80px;
+    -fx-pref-height: 30px;
+    -fx-min-height: 30px;
+    -fx-max-height: 30px;
+    -fx-background-color: red;
+    -fx-text-fill: #ffffff;*/
+}
+
+.categoryLabel {
+/*
+    -fx-font-size: 11px;
+    -fx-font-style: italic;
+    -fx-text-fill: #333;*/
+}
+
+.serviceLabel {
+
+}
+
+.vault-main-content {
+/*
+    -fx-background-color: transparent;*/
+}
+
+.vault-overlay {
+}
+
+
+.vault-menu-item {
+/*
+    -fx-font-size: 11px;
+    -fx-pref-height: 32px;
+    -fx-min-height: 32px;
+    -fx-max-height: 32px;*/
+}
+
+.vault-label {
+/*
+    -fx-font-size: 65px;
+    -fx-text-fill: #FFEFBAFF;*/
+}
+
+.vault-error-message {
+/*
+    -fx-font-size: 15px;
+    -fx-font-color: #660000;*/
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.pandaPass.controllers.TotpCodeController"
+            prefHeight="400.0" prefWidth="600.0">
+    <VBox alignment="CENTER" spacing="50">
+        <Label alignment="CENTER" text="Enter the code from your authentication app (and optionally press ENTER to verify): " styleClass=""/>
+        <HBox fx:id="totpCodeContainer" alignment="CENTER" spacing="25.0">
+            <TextField fx:id="totpCode0" prefWidth="40" alignment="CENTER"
+                       style="-fx-font-size: 25px; -fx-padding: 0 0 0 0; -fx-border-color: black; -fx-border-width: 0 0 2 0; -fx-background-color: transparent;"/>
+            <TextField fx:id="totpCode1" prefWidth="40" alignment="CENTER"
+                       style="-fx-font-size: 25px; -fx-padding: 0 0 0 0; -fx-border-color: black; -fx-border-width: 0 0 2 0; -fx-background-color: transparent;"/>
+            <TextField fx:id="totpCode2" prefWidth="40" alignment="CENTER"
+                       style="-fx-font-size: 25px; -fx-padding: 0 0 0 0; -fx-border-color: black; -fx-border-width: 0 0 2 0; -fx-background-color: transparent;"/>
+            <TextField fx:id="totpCode3" prefWidth="40" alignment="CENTER"
+                       style="-fx-font-size: 25px; -fx-padding: 0 0 0 0; -fx-border-color: black; -fx-border-width: 0 0 2 0; -fx-background-color: transparent;"/>
+            <TextField fx:id="totpCode4" prefWidth="40" alignment="CENTER"
+                       style="-fx-font-size: 25px; -fx-padding: 0 0 0 0; -fx-border-color: black; -fx-border-width: 0 0 2 0; -fx-background-color: transparent;"/>
+            <TextField fx:id="totpCode5" prefWidth="40" alignment="CENTER"
+                       style="-fx-font-size: 25px; -fx-padding: 0 0 0 0; -fx-border-color: black; -fx-border-width: 0 0 2 0; -fx-background-color: transparent;"/>
+        </HBox>
+
+    </VBox>
+</StackPane>

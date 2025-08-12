@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.pandaPass.controllers.EditEntryController"
+      fx:id="editEntryPane"
+      alignment="CENTER"
+      spacing="10.0">
+    <Label text="Edit Entry" styleClass="h2, font-bold"/>
+    <Label fx:id="compromisedMessage" managed="false" visible="false" styleClass="font-size-small, font-bold, error-message"/>
+    <HBox spacing="2" alignment="CENTER">
+        <Label text="Service: "/>
+        <TextField fx:id="editServiceInput" styleClass="vault-input"/>
+    </HBox>
+    <HBox spacing="2" alignment="CENTER">
+        <Label text="Username: "/>
+        <TextField fx:id="editUsernameInput" styleClass="vault-input"/>
+    </HBox>
+    <HBox spacing="2" alignment="CENTER">
+        <Label fx:id="showPasswordLabel" text="Password: "/>
+        <TextArea fx:id="editPasswordInput" wrapText="true" prefRowCount="1" managed="false" visible="false" styleClass="vault-input"/>
+    </HBox>
+    <ChoiceBox fx:id="editCategoryInput" prefWidth="200.0"/>
+    <Button fx:id="showPasswordButton" text="Show Password" onAction="#handleShowPassword"/>
+    <Label fx:id="editingErrorMessage" managed="false" visible="false" styleClass="error-message, font-bold, font-size-medium"/>
+    <HBox spacing="10.0" alignment="CENTER">
+        <Button text="Save" fx:id="saveEditEntryButton" onAction="#handleSaveEditEntry"/>
+        <Button text="Revert" fx:id="revertChangesButton" onAction="#handleRevertChanges"/>
+    </HBox>
+</VBox>

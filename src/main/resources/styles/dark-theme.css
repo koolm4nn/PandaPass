@@ -1,0 +1,25 @@
+.root-pane {
+    -fx-background-image: url("/images/dark/root_background.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+
+    /* -fx-background-color: primary-bg-dark; */
+}
+.footer {
+    -fx-background-color: primary-bg-dark;
+}
+
+.h1 {
+    -fx-text-fill: primary-text-color-dark;
+}
+
+.h2 {
+    -fx-text-fill: primary-text-color-dark;
+}
+
+.login-input {
+    -fx-border-color: #444444;
+    -fx-background-color: #ECECEC;
+    -fx-text-fill: #222222;
+    -fx-prompt-text-fill: #888888;
+}
