@@ -26,12 +26,7 @@ It provides a secure vault for storing your login credentials **locally on your 
 ---
 
 ## 📦 Installation & Setup
-   ```bash
-   git clone https://github.com/kuhlm4nn/PandaPass.git
-   cd PandaPass
-   mvn clean install
-   java -jar target/PandaPass.jar
-   ```
+None yet.
 
 
 ## Technology Stack
