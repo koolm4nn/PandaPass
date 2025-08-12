@@ -1,35 +1,56 @@
-# 🐼 PandaPass
+# PandaPass
 
-PandaPass is a lightweight, open-source password manager built with Java and JavaFX.  
-It provides a clean, minimalistic vault for storing your login credentials securely on your local machine.
+PandaPass is a lightweight, clean, and minimalistic open-source password manager built with **Java 21** and **JavaFX**.
 
----
+- **Lightweight** — Runs without heavy dependencies, cloud services, or large installers; stores everything locally.
+- **Clean** — Distraction-free interface with intuitive navigation.
+- **Minimalistic** — Only the essential features you need to manage passwords securely — no bloat.
 
-## ✨ Features
-
-- 🔐 Add, edit, and delete password entries
-- 📋 Copy passwords to clipboard with auto-clear timeout
-- 🕵️ Inspect password visibility on demand
-- 🗑️ Safe deletion with slider confirmation
-- 🔍 Search functionality to quickly find services and usernames
-- Customizable UI and clean dark theme
-- Modern, icon-enhanced entry cells
+It provides a secure vault for storing your login credentials **locally on your machine**, with asynchronous features for a smooth and responsive user experience.
 
 ---
 
-## 📦 Installation
+## Features
 
-1. **Clone this repository**
+- **Secure Vault** — Local encrypted storage of credentials
+- **Password Breach Check** — Asynchronous check using the *Have I Been Pwned* API
+- **Add, Edit, Delete** — Manage your entries easily
+- **Clipboard Copy** — Copy passwords with automatic timeout-based clearing
+- **TOTP** – Used for 2FA.
+- **Password Visibility Toggle** — Inspect passwords only when needed
+- **Safe Deletion** — Slider confirmation for irreversible actions
+- **Search Functionality** — Quickly find services and usernames
+- **Category Management** — Organize entries by category
+- **Modern UI** — JavaFX MVVM architecture, dark theme, icon-enhanced entry cells
+
+---
+
+## 📦 Installation & Setup
    ```bash
-   git clone https://github.com/yourusername/PandaPass.git
+   git clone https://github.com/kuhlm4nn/PandaPass.git
    cd PandaPass
+   mvn clean install
+   java -jar target/PandaPass.jar
+   ```
+
+
+## Technology Stack
+- Java 21
+- JavaFX (UI)
+- MVVM pattern
+- PostgreSQL
+
+## Notes
+- All data is stored locally and encrypted before being saved.
+- Clipboard content is cleared automatically after a short timeout.
+- Password breach check uses Have I Been Pwned without sending your full password.
 
 ## Roadmap
 - Export/Import encrypted vault files
 - Custom encryption key support
-- Dark/Light theme toggle
 - Cross-platform build packages
 - Password Strength Indicator
+- Multi-language support
 
 ## License
-This project is licensed under MIT license.
+This project is licensed under the MIT License.
